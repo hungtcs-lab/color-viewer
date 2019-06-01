@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <style>
+    html, body {
+      width: 100vw;
+      height: 100vh;
+      margin: 0px;
+      padding: 0px;
+      overflow: hidden;
+      background-color: #DDD;
+    }
+    #color-viewer {
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <label>
+    <span>端口：</span>
+    <select id="ports"></select>
+  </label>
+  <label>
+    <span>波特率：</span>
+    <select id="baudrate">
+      <option value="9600" label="9600"></option>
+    </select>
+  </label>
+  <button id="open-serial">打開</button>
+
+  <div id="color-viewer"></div>
+
+  <div id="error"></div>
+  <script src="./renderer.js"></script>
+</body>
+</html>
